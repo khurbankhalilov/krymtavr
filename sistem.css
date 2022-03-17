@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.header img{
+    width: 200px;
+    height: 80px;
+    margin-top: 5px;
+}
+.header .about{
+    font-size: 15px;
+    width: 200px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about:hover{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+    cursor: pointer;
+}   
+.header .about2{
+    font-size: 15px;
+    width: 170px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about2::before{
+    content: "Пн-Вс 9:00-19:00" ;
+}
+.header .about2:hover{
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-decoration-color: blue;
+}  
+.header .about2:hover::before{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+} 
+.header .about3{
+    font-size: 15px;
+    width: 140px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about3 .button{
+    padding: 10px;
+    background-color: #087792;
+    color: white;
+}
+.header .about3 .button:hover{
+    color: black;
+    transition: .4s;
+    text-decoration: none;
+    cursor: pointer;
+}
+.liness{
+    width: 100vw;
+    height: 80px;
+    background: #053947;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.liness ul{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: white;
+}
+.liness ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.liness ul li a{
+    color: white;
+    transition: .4s;
+}
+.liness ul li a:hover{
+    color: #FFAA06;
+}
+.liness ul::before{
+    content: "Системы безопасности";
+    color: #FFAA06;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.body img{
+    width: 100vw;
+    height: 500px;
+    margin-top: 90px;
+    position: absolute;
+    z-index: -999999;
+}
+.body-text{
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 180px;
+}
+.body-text h4{
+    font-weight: 200;
+    font-size: 25px;
+}
+.body-text h1{
+    font-weight: bold;
+    font-size: 46px;
+}
+.body-text p{
+    width: 350px;
+    font-weight: 100;
+}
+.body-indicators{
+    position: relative;
+    top: 250px;
+    left: 180px;
+}
+.body-indicators .btn-1{
+    padding: 10px;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+.body-indicators .btn-1:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: .4s;
+    cursor: pointer;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+.modal form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.modal form input{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+#form-button{
+    background-color: transparent;
+    transition: .4s;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+#modal-kapat{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(185, 0, 0);
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    padding: 3px;
+}
+#modal-kapat:hover{
+    background-color: red;
+}
+#modal-kapat2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(185, 0, 0);
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+#modal-kapat2:hover{
+    background-color: red;
+}
+#form-button:hover{
+    background-color: white;
+    border: 2px solid transparent;
+    color: #000;
+}
+.modal-2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+.modal-2 form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.modal-2 form input{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.card-txt::after{
+    content: "____";
+    color: #FFAA06;
+    font-size: 30px;
+    position: relative;
+    top: -85px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+}
+.cards .card{
+    width: 30%;
+    border: 1px solid rgb(94, 93, 93);
+}
+.cards .card h5, .cards .card p{
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.keep{
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+}
+.keep img{
+    width: 50%;
+}
+.containerr{
+    width: 60%;
+    background-color: white;
+}
+.salary{
+    width: 100vw;
+    margin-left: -85px;
+    background-color: rgb(153, 153, 153);
+    color: white;
+    padding-bottom: 50px;
+}
+.salary .containerr{
+    width: 90%;
+    margin: auto;
+    padding: 50px;
+    background-color: white;
+}
+.p1{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+    color: black;
+}
+.contact{
+    width: 100vw;
+    height: 350px;
+    background-color: #087792;
+}
+.contact .main-contact{
+    width: 60vw;
+    background-color: white;
+    position: relative;
+    top: 33px;
+    left: 250px;
+    padding: 20px;
+}
+.contact  h2{
+    font-size: 25px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-left: 255px;
+    color: white;
+}
+.contact  h2:hover{
+    cursor: pointer;
+}
+.contact p{
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: -45px;
+    margin-left: 650px;
+    color: gray;
+    transition: .4s;
+}
+.contact  p:hover{
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    color: white;
+    transition: .4s;
+    cursor: pointer;
+}
+form{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.main-contact h3{
+    font-size: 22px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 20px;
+}
+.main-contact h4{
+    font-size: 14px;
+    font-weight: 200;
+    text-align: center;
+    padding-left: 30px;
+}
+#box{
+    position: relative;
+    top: 100px;
+    right: 650px;
+}
+#btn{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    top: 23px;
+    background-color: #087792;
+    color: white;
+}
+.vectors{
+    width: 100vw;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    margin-left: -85px;
+}
+.vector{
+    padding: 10px 60px;
+}
+.vector img{
+    padding-left: 25px;
+}
+.vector h5{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.presets{
+    display: flex;
+    width: 120%;
+    margin-left: -100px;
+}
+.presets .p{
+    margin: auto;
+    cursor: pointer;
+}
+.presets .p img{
+    width: 100%;
+    filter: grayscale(.4);
+    transition: .4s;
+}
+.presets .p img:hover{
+    filter: grayscale(0);
+}
+.presets .p p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    left: 25px;
+}
+.faqs{
+    margin-top: 30px;
+}
+.faqs h1{
+    font-size: 45px;
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.faqs .faq{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #087792;
+    border-radius: 10px;
+}
+.faqs .faq i{
+    margin-top: 18px;
+    margin-left: 40px;
+}
+.faqs .faq h4{
+    margin-top: 5px;
+    margin-left: 50px;
+    min-width: 800px;
+}
+.acilir-menu{
+    width: 90%; 
+    margin: auto; 
+    padding: 10px; 
+    background-color: #087792; 
+    color: white; 
+    display: none;
+    margin-top: -12px;
+    border-radius: 5px;
+}
+.map{
+    margin-top: 80px;
+    margin-left: -85px;
+    width: 100%;
+    position: relative;
+}
+.map .map-main{
+    position: absolute;
+    z-index: -1;
+}
+.footer{
+    width: 120%;
+    background-color: #042A34;
+    height: 500px;
+    margin-left: -85px;
+}
+.footer .content{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.footer .content .logo img{
+    margin-top: 100px;
+}
+.footer .content .menu{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .menu h5::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -50px;
+}
+.footer .content .menu h6{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.footer .content .kontakt{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .kontakt h4::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -90px;
+}
+.footer .content .kontakt i{
+    margin-top: 20px;
+}
+.footer .content .kontakt .citesss{
+    font-size: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}

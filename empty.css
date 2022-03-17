@@ -1,0 +1,205 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.keeper{
+    width: 40%;
+    background-color: white;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+.keeper .keeper-header{
+    text-align: center;
+}
+.keeper .keeper-header img{
+    width: 80px;
+}
+.keeper .keeper-header h1{
+    color: black;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+form{
+    width: 70%;
+    margin: auto;
+}
+form .username{
+    margin-top: 20px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+form i{
+    font-size: 25px;
+    margin-left: 10px;
+    text-align: end;
+}
+form .password{
+    margin-top: 10px;
+    width: 80%;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.keeper .keeper-indicators{
+    display: flex;
+    width: 68%;
+    margin: auto;
+    padding-top: 20px;
+}
+.keeper .keeper-indicators p{
+    margin-left: 10px;
+    margin-top: -3px;
+}
+.keeper .keeper-footer{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.keeper .keeper-footer button{
+    width: 100%;
+    margin: auto;
+    height: 40px;
+    font-size: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.keep{
+    width: 90%;
+    background-color: #087792;
+    margin: auto;
+    color: white;
+    display: block;
+}
+.keep h4{
+    width: 80%;
+    margin: auto;
+    font-size: 25px;
+    font-weight: 400;
+}
+.keep p{
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 100;
+    color: white;
+    margin-top: 20px;
+} */
+/* .modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.modal form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color: white;
+    border-radius: 10px;
+    min-width: 400px;
+    min-height: 150px;
+}
+.modal form input{
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 20px;
+}
+#form-button{
+    background-color: #053947;
+    color: white;
+    transition: .4s;
+    min-height: 40px;
+    font-size: ;
+}
+#form-button:hover{
+    background-color: transparent;
+    color: black;
+}
+#modal-close{
+    position: absolute;
+    top: -18.5px;
+    right: 0;
+    background: white;
+    padding: 5px;
+    transition: .4s;
+    border-bottom-left-radius: 10px;
+}
+#modal-close:hover{
+    background: red;
+    cursor: pointer;
+} */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+.wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.container{
+    float: right;
+    height: 25px;
+    width: 40px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.menu{
+    width: 30%;
+    height: 100vh;  
+    padding: 50px;
+    transform: translateX(-600px);
+    transition: .5s;
+}
+.showmenu{
+    transform: translateX(0);
+}
+.menulogo{
+    width: 30px;
+    height: 3px;
+    background-color: #042A34;
+}
+.menu li{
+    list-style: none;
+    padding: 20px 0;
+    border-bottom: 1px solid white;
+    text-align: center;
+    background: #053947;
+}
+.menu li:first-child{
+    background: #042A34;
+}
+.menu li:first-child a{
+    font-weight: bold;
+}
+.menu li:last-child{
+    border-bottom: none;
+
+}
+.menu li a{
+    color: snow;
+    text-decoration: none;
+    font-size: 25px;
+    text-align: center;
+    transition: .4s;
+}
+.menu li a:hover{
+    font-weight: bold;
+}

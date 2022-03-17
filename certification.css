@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+}
+.cont{
+    margin-top: -100px;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.header img{
+    width: 200px;
+    height: 80px;
+    margin-top: 5px;
+}
+.header .about{
+    font-size: 15px;
+    width: 200px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about:hover{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}   
+.header .about2{
+    font-size: 15px;
+    width: 170px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about2::before{
+    content: "Пн-Вс 9:00-19:00" ;
+}
+.header .about2:hover{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}  
+.header .about2:hover::before{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+} 
+.header .about3{
+    font-size: 15px;
+    width: 140px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about3 .button{
+    padding: 10px;
+    background-color: #087792;
+    color: white;
+}
+.header .about3 .button:hover{
+    color: black;
+    transition: .4s;
+    text-decoration: none;
+}
+.liness{
+    width: 100vw;
+    height: 80px;
+    background: #053947;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.liness ul{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: white;
+}
+.liness ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.liness ul li a{
+    color: white;
+    transition: .4s;
+}
+.liness ul li a:hover{
+    color: #FFAA06;
+}
+.liness ul::before{
+    content: "Системы безопасности";
+    color: #FFAA06;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.container{
+    position: relative;
+    padding-top: 120px;
+}
+.container h1{
+    font-size: 40px;
+    font-weight: 300;
+}
+.container h1::after{
+    content: "______";
+    color: black;
+    font-size: 30px;
+    font-weight: 200;
+    position: relative;
+    top: 20px;
+    left: -440px;
+}
+.container p{
+    width: 750px;
+    position: absolute;
+    top: 200px;
+    left: 20px;
+    color: gray;
+    transition: .5s;
+}
+.container p:hover{
+    color: black;
+    cursor: pointer;
+}
+.photos{
+    width: 100%;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+.photos img{
+    width: 30%;
+    margin: auto;
+    margin-top: 40px;
+    min-width: 300px;
+}
+.footer{
+    width: 100%;
+    background-color: #042A34;
+    height: 500px;
+    margin-top: 60px !important;
+}
+.footer .content{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.footer .content .logo img{
+    margin-top: 100px;
+}
+.footer .content .menuss{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .menuss h5::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -50px;
+}
+.footer .content .menuss h6{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.footer .content .kontakt{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .kontakt h4::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -90px;
+}
+.footer .content .kontakt i{
+    margin-top: 20px;
+}
+.footer .content .kontakt .citesss{
+    font-size: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.menu{
+    display: none;
+}
+@media screen and (max-width: 480px){
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: "Poppins";
+        box-sizing: border-box;
+    }
+    .cont{
+        margin-top: -220px;
+    }
+    .header{
+        display: none;
+    }
+    .liness{
+        display: none;
+    }
+    .wrapper{
+        float: right;
+        z-index: 9999;
+        position: relative;
+        top: 80px;
+    }
+    .container{
+        float: left;
+        height: 25px;
+        width: 40px;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        position: relative;
+    }
+    .menu{
+        width: 90%;
+        height: 100vh;  
+        padding: 10px;
+        transform: translateX(-600px);
+        transition: .5s;
+        display: block;
+        position: absolute;
+        top: 10px;
+        z-index: 999;
+    }
+    .showmenu{
+        transform: translateX(0px);
+    }
+    .container p{
+        width: 300px;
+    }
+    .photos{
+        margin-left: 0px !important;
+    }
+    .menulogo{
+        font-size: 40px;
+        font-weight: 900;
+        height: 3px;
+        position: relative;
+        top: -60px;
+    }
+    .container{
+        color: black;
+    }
+    .menu li{
+        list-style: none;
+        padding: 15px 0;
+        border-bottom: 1px solid white;
+        text-align: center;
+        background: #053947;
+    }
+    .menu li:first-child{
+        background: #042A34;
+    }
+    .menu li:first-child a{
+        font-weight: bold;
+    }
+    .menu li:last-child{
+        border-bottom: none;
+    
+    }
+    .menu li a{
+        color: snow;
+        text-decoration: none;
+        font-size: 25px;
+        text-align: center;
+        transition: .4s;
+    }
+    .menu li a:hover{
+        font-weight: bold;
+    }
+    .menulogo{
+        color: black;
+    }
+    .photos img{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .footer{
+        height: 245vh;
+        position: relative;
+        top: 2800px;
+    }
+    .footer .logo{
+        position: relative;
+    }
+    .footer .content{
+        display: block;
+        font-size: 30px ;
+        position: relative;
+        top: -300px;
+        left: -80px;
+    }
+    .footer .content .menuss h5{
+        font-size: 30px;
+    }
+    .footer .content .menuss h6{
+        font-size: 25px;
+    }
+    .footer .content .logo{
+        margin-left: 100px;
+    }
+}

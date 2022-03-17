@@ -1,0 +1,436 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.header img{
+    width: 200px;
+    height: 80px;
+    margin-top: 5px;
+}
+.header .about{
+    font-size: 15px;
+    width: 200px;
+    color: gray;
+    margin-top: 10px;
+}
+.active{
+    opacity: 1;
+}
+.popup{
+    opacity: 0;
+}
+.header .about:hover{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}   
+.header .about2{
+    font-size: 15px;
+    width: 170px;
+    color: gray;
+    margin-top: 10px;
+}
+.header .about2::before{
+    content: "Пн-Вс 9:00-19:00" ;
+}
+.header .about2:hover{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+}  
+.header .about2:hover::before{
+    text-decoration-line: underline;
+    text-decoration-color: blue;
+} 
+.header .about3{
+    font-size: 15px;
+    width: 140px;
+    color: gray;
+    margin-top: 10px;
+}
+.md-social-btn .mbsc-ic {
+    float: left;
+}
+.header .about3 .button{
+    padding: 10px;
+    background-color: #087792;
+    color: white;
+}
+.header .about3 .button:hover{
+    color: black;
+    transition: .4s;
+    text-decoration: none;
+}
+.liness{
+    width: 100vw;
+    height: 80px;
+    background: #053947;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+.liness ul{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    color: white;
+}
+.liness ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+.liness ul li a{
+    color: white;
+}
+.liness ul::before{
+    content: "Системы безопасности";
+    color: #FFAA06;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.body img{
+    width: 100vw;
+    height: 500px;
+    margin-top: 90px;
+    position: absolute;
+    z-index: -1;
+}
+.body-text{
+    color: white;
+    position: relative;
+    top: 200px;
+    left: 180px;
+}
+.body-text h1{
+    font-weight: bold;
+    font-size: 46px;
+}
+.body-text p{
+    width: 300px;
+    font-weight: 300;
+    margin-top: 40px;
+}
+.body-indicators{
+    position: relative;
+    top: 250px;
+    left: 180px;
+}
+.body-indicators .btn-1{
+    padding: 10px;
+    width: 210px;
+    height: 50px;
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    font-size: 16px;
+    border: 2px solid transparent;
+}
+.body-indicators .btn-1:hover{
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: .4s;
+    cursor: pointer;
+}
+.body-indicators .btn-2{
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: transparent;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    border: 2px solid white;
+    margin-top: -50px;
+    margin-left: 220px;
+}
+.body-indicators .btn-2:hover{
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    transition: .4s;
+    cursor: pointer;
+}
+.container{
+    position: relative;
+    top: 380px;
+}
+.sam::before{
+    content: "_____";
+    position: relative;
+    top: 10px;
+    left: 55px;
+}
+.sam{
+    cursor: pointer;
+}
+.photos{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+.photos .photo{
+    width: 20%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border: .5px solid black;
+}
+.photos .photo img{
+    width: 100%;
+}
+.photos .photo h4{
+    margin: 10px 0;
+}
+.photos .photo p{
+    color: #087792;
+    font-size: 18px;
+    transition: .3s;
+}
+.photos .photo p::after{
+    content: " p.";
+    color: black;
+}
+.photos .photo p::before{
+    content: "от ";
+    color: black;
+}
+.photos .photo p:hover{
+    color: black;
+    cursor: pointer;
+}
+.vectors{
+    width: 100vw;
+    background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    margin-left: -85px;
+    margin-top: 20px;
+}
+.vector{
+    padding: 10px 60px;
+}
+.vector img{
+    padding-left: 25px;
+}
+.vector h5{
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 30px;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+.modal form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.modal form input{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+}
+#form-button{
+    background-color: transparent;
+    transition: .4s;
+    border: 2px solid white;
+    color: white;
+    padding: 10px;
+}
+#modal-kapat{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(185, 0, 0);
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    padding: 3px;
+}
+#modal-kapat:hover{
+    background-color: red;
+}
+#modal-kapat2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(185, 0, 0);
+    border-bottom-left-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+    padding: 3px;
+    color: rgb(0, 0, 0);
+}
+#modal-kapat2:hover{
+    background-color: red;
+}
+#form-button:hover{
+    background-color: white;
+    border: 2px solid transparent;
+    color: #000;
+}
+.modal-2{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.514);
+}
+.modal-2 form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.modal-2 form input{
+    margin: 5px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.presets{
+    display: flex;
+    width: 120%;
+    margin-left: -100px;
+}
+.presets .p{
+    margin: auto;
+    cursor: pointer;
+}
+.presets .p img{
+    width: 100%;
+    filter: grayscale(.4);
+    transition: .4s;
+}
+.presets .p img:hover{
+    filter: grayscale(0);
+}
+.presets .p p{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    left: 25px;
+}
+.payment h3{
+    font-size: 25px;
+    font-weight: 400;
+}
+.payment h6{
+    font-size: 18px;
+    font-weight: 400;
+}
+.back{
+    position: relative;
+    width: 550px;
+    height: 650px;
+    background-color: rgba(237, 237, 237.5)
+}
+.commoditys .commodity{
+    padding: 20px 5px 10px;
+}
+.commoditys .commodity h5{
+    font-size: 20px;
+    font-weight: 300;
+}
+.commoditys .commodity h5::after{
+    content: "- от 1000 $";
+    padding-left: 10px;
+    font-weight: 900;
+}
+.commoditys .img{
+    position: relative;
+}
+.commoditys .img img{
+    width: 9%;
+}
+.big-slot{
+    width: 580px;
+    height: 900px;
+    background-color: rgba(237, 237, 237.5);
+}
+.hoverr{
+    list-style: none;
+    transition: .4s;
+}
+.footer{
+    width: 100%;
+    background-color: #042A34;
+    height: 500px;
+}
+.footer .content{
+    width: 90%;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.footer .content .logo img{
+    margin-top: 100px;
+}
+.footer .content .menu{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .menu h5::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -50px;
+}
+.footer .content .menu h6{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 300;
+}
+.footer .content .kontakt{
+    margin-top: 100px;
+    margin-left: 80px;
+}
+.footer .content .kontakt h4::after{
+    content: "____";
+    color: #FFAA06;
+    position: relative;
+    top: 10px;
+    left: -90px;
+}
+.footer .content .kontakt i{
+    margin-top: 20px;
+}
+.footer .content .kontakt .citesss{
+    font-size: 40px;
+    margin-left: 20px;
+    cursor: pointer;
+}
